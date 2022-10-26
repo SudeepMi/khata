@@ -14,7 +14,7 @@ function HomeScreen() {
     const [dateTime, setDateTime] = React.useState('');
 
     useEffect(() => {
-      const _date = new Date(Date.now()).toLocaleString(locale, dateOption);
+      const _date = new Date(Date.now()).toLocaleString(locale);
       setDateTime(_date);
     }, [])
     

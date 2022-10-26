@@ -15,6 +15,9 @@ import { colors } from './utils/colors';
 import AddProductScreen from './screens/AddProductScreen';
 import AddCategoryScreen from './screens/AddCategoryScreen';
 import ProductDetailScreen from './screens/ProductDetailScreen';
+import SplashScreen from 'react-native-splash-screen'
+
+
 
 
 const Tab = createBottomTabNavigator();
@@ -38,6 +41,10 @@ const theme = {
 };
 
 export default function App() {
+   React.useEffect(()=>{
+    SplashScreen.hide();
+   },[])
+ 
   return (
     <PaperProvider theme={theme}>
     <NavigationContainer>
