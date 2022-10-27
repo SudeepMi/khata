@@ -28,7 +28,7 @@ const ProductScreen = ({navigation}) => {
                     <Button mode='contained-tonal' icon='plus'>Add Product</Button>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={()=>navigation.navigate('AddCategory')}>
-                    <Button mode='contained-tonal' icon='plus'>Add Category</Button>
+                    <Button mode='contained-tonal' icon='tag-outline'>Categories</Button>
                 </TouchableOpacity>
                 </View>
                 <View>
